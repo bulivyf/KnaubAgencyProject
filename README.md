@@ -223,8 +223,7 @@ For the system to become operational, replace synthetic stances with reproducibl
 ## Understanding `baseline.png`, `evidence.png`, and `intervention.png`
 
 - **`baseline.png`** graphs the agents' assigned numerical stances over time with no external evidence. Curves are not probabilities or verified beliefs.
-- **`evidence.png`** uses the same initial conditions and model but injects a synthetic positive-stance forcing term into the Observer during model time 6–10. It depicts the resulting trajectories, not the external evidence's content or factual strength.
+- **`evidence.png`** uses the same initial conditions and model but injects a synthetic positive-stance forcing term into the Observer during model time 6–10. It depicts the resulting trajectories, and can be seen as personal agent retention of the evidence (as a simulated entity).
 - **`intervention.png`** plots the Euclidean distance between the baseline and evidence state vectors over time and shades the injection window.
 - Evidence is modeled as `evidence_strength * (1 - Observer_stance)`. This is a numerical intervention, **not fact checking** or actual LLM inference.
 
-Every section of `model.py`, `experiment.py`, and `tests/test_model.py` is now explained in inline comments.
